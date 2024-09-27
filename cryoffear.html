@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <title>Första uppgift</title>
+    <link href="style.css" rel="stylesheet">
+    <script defer src="script.js"></script> <!-- Link to JS file -->
+</head>
+
+<body> 
+    <img id="image" src="https://www.icegif.com/wp-content/uploads/2023/03/icegif-1157.gif" alt="Backrooms">
+    
+    <h1 class="centered-heading">Cry of fear</h1>
+
+    <div class="menu-text">
+        <ul>
+            <li><button id="info-btn" class="menu-btn">Information</button></li>
+            <li><button id="quit-btn" class="menu-btn">Quit</button></li>
+        </ul>
+    </div>
+
+    <!-- Information section with an id for linking -->
+    <div id="info-section" style="display: none;">
+        <h2>About Cry-Of-Fear</h2>
+        <img id="walk"src="https://media.tenor.com/1czrxDCkOzYAAAAM/cry-of-fear.gif" alt="walking">
+        <p>Cry of Fear is a first-person indie survival horror game developed by independent Swedish studio Team Psykskallar. Though originally a mod for the video game Half-Life in 2012, it was released as a standalone product the following year. Cry of Fear follows the story of Simon Henriksson (a 19 year old Swedish male with depression and anxiety) going through the city of Stockholm.
+
+            Combining elements of survival horror and first-person shooter mechanics, Cry of Fear challenges players to navigate through a haunting urban environment filled with monsters and unsettling occurrences. The story explores themes of mental illness and trauma. The game was praised for its atmospheric tension, narrative, and innovative use of the Half-Life engine.</p>
+            <img id="head" src="https://25.media.tumblr.com/88cade1429424b89efe15614ecf44719/tumblr_mt5qbhqUPo1rsbhbyo1_500.gif" alt="head">   
+    </div>
+
+   
+
+    <script>
+        // Show the information section when the button is clicked
+        document.getElementById("info-btn").onclick = function() {
+            document.getElementById("info-section").style.display = "block"; // Show the info section
+            window.scrollTo(0, document.getElementById("info-section").offsetTop); // Scroll to it
+        };
+
+        // Quit button logic
+        document.getElementById("quit-btn").onclick = function() {
+            alert("Please close the tab to quit.");
+        };
+    </script>
+</body>
+</html>
